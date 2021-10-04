@@ -14,7 +14,7 @@ const savePassword = (password) => {
     (error, fd) => {
       fs.write(fd, password + os.EOL, null, 'utf-8', () => {
         fs.close(fd, () => {
-          console.log(chalk.yellow('Password saved to password.txt'));
+          console.log(chalk.underline('Password saved to password.txt'));
         });
       });
     }
