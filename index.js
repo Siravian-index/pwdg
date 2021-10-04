@@ -1,10 +1,11 @@
 #!/usr/bin/env node
-const program = require('commander');
+const { Command } = require('commander');
 const chalk = require('chalk');
 const clipboardy = require('clipboardy');
 const createPassword = require('./utils/createPassword');
 const savePassword = require('./utils/savePassword');
 
+const program = new Command();
 program.version('1.0.0').description('Simple Password Generator');
 
 program
