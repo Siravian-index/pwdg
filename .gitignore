@@ -6,3 +6,6 @@
 
 # vscode
 .vscode
+
+# password.txt
+/password.txt
